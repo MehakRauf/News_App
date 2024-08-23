@@ -1,0 +1,27 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 450px;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px; /* Adjust height as needed */
+}
+
+.card-body {
+    padding: 1rem; /* Adjust padding as needed */
+}
+
+.col-md-4 {
+    margin-bottom: 1rem; /* Margin between cards */
+}
+
+.truncated-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Adjust the number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
