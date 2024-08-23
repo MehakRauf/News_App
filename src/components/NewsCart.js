@@ -12,7 +12,7 @@ const NewsCart = ({ articles }) => {
                 {articles.map((article, index) => (
                     <div key={index} className="col-md-4 mb-4"> 
                         <div className="card" style={{ width: "100%" }}> 
-                            <img src={article.image} className="card-img-top" alt={article.title} style={{ objectFit: 'cover', height: '200px' }} /> {/* Custom height for image */}
+                            <img src={article.image} className="card-img-top" alt={article.title} style={{ objectFit: 'cover', height: '200px' }} /> 
                             <div className="card-body">
                                 <h5 className="card-title">{article.title}</h5>
                                 <p className="card-text truncated-text">

@@ -9,7 +9,7 @@ const NewsAPI = ({ category }) => {
         let url = 'https://gnews.io/api/v4/top-headlines?category=' + category + '&lang=en&country=us&max=10&apikey=' + apikey;
         fetch(url)
             .then(response => response.json())
-            .then(data => { console.log(data); setArticles(data.articles); })
+            .then(data => setArticles(data.articles))
             .catch(error => console.error('Fetch error:', error));
     }, [category]);
 
